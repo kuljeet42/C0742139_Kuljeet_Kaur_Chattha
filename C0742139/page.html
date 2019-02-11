@@ -15,6 +15,16 @@
             }
 
         }
+        function MouseRollover(MyImage)
+        {
+            MyImage.src = "images/fb.png";
+
+        }
+        function MouseOut(MyImage)
+        {
+            MyImage.src = "images/img1.png";
+
+        }
     </script>
     <style>
         p{
@@ -29,6 +39,10 @@
 <body onload="trigger();">
         <p id="hover">WELCOME!!!</p>
     <img id="img1" src="images/download1.png" />
+    <div align="center">
+        <img src="images/fb.png" border="0px" width="650" height="550px" onMouseOver="MouseRollover(this)"
+             onmouseout="MouseOut(this)"/>
+    </div>
      
 </body>
 </html>
